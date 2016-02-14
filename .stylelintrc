@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "function-comma-space-after": "always-single-line",
+    "function-comma-space-before": "never",
+    "function-url-quotes": "none",
+    "number-leading-zero": "never",
+    "number-zero-length-no-unit": true,
+    "string-quotes": "single",
+    "value-list-comma-newline-after": "always-multi-line",
+    "value-list-comma-newline-before": "never-multi-line",
+    "value-list-comma-space-after": "always",
+    "value-list-comma-space-before": "never"
+  }
+}
