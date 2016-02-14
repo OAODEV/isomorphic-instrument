@@ -8,13 +8,26 @@
     "build": "babel src -d build",
     "test": "grunt intern:client"
   },
+  "bin": {
+    "on": "./build/cli.js"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OAODEV/isomorphic-instrument"
+  },
+  "bugs": {
+    "url": "https://github.com/OAODEV/isomorphic-instrument/issues"
+  },
   "author": "Luz M. Costa <luz.costa@adops.com> (http://adops.com)",
   "license": "ISC",
   "dependencies": {
-    "requirejs": "2.1.20"
+    "requirejs": "2.1.20",
+    "shelljs": "0.6.0",
+    "vorpal": "1.7.7"
   },
   "devDependencies": {
-    "babel": "5.8.23",
+    "babel-cli": "6.4.5",
     "chai": "3.3.0",
     "chance": "0.7.7",
     "grunt": "0.4.5",
@@ -26,5 +39,14 @@
     "load-grunt-tasks": "3.3.0",
     "mocha": "2.3.3",
     "time-grunt": "1.2.1"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-umd"
+    ],
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
   }
 }
