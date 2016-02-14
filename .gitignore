@@ -1,4 +1,7 @@
+bower_components
 build
 config.json
+jspm_packages
 node_modules
 npm-debug.log
+.DS_Store
