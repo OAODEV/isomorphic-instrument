@@ -4,8 +4,8 @@
   "description": "Configure an isomorphic Node module for transpiling, linting, testing, integrating, and deploying.",
   "main": "build/index.js",
   "scripts": {
-    "prebuild": "rm -rf build && mkdir build",
-    "build": "grunt make",
+    "prebuild": "mkdir -p build",
+    "build": "babel src -d build",
     "test": "grunt intern:client"
   },
   "author": "Luz M. Costa <luz.costa@adops.com> (http://adops.com)",
